@@ -110,6 +110,7 @@ if searchTerm and noOfSearchTerms:
     patches, texts = plt.pie(sizes, colors = colors, startangle = 90)
     plt.legend(patches, label, loc = "best")
     plt.title('How people are reacting on ' + searchTerm + ' by analyzing ' + str(noOfSearchTerms) + ' Tweets.')
+    explode = (0, 0, 0.1)
     plt.axis('equal')
     plt.tight_layout()
     st.pyplot()
@@ -122,4 +123,4 @@ st.sidebar.info("A Twitter Sentiment analysis Project which will scrap twitter f
 
 
 st.sidebar.header("For Any Queries/Suggestions Please reach out at :")
-st.sidebar.info("kabirrrr0402@gmail.com")
+st.sidebar.info("kaustubhpandit24@gmail.com")
