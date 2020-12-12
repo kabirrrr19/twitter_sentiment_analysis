@@ -110,7 +110,6 @@ if searchTerm and noOfSearchTerms:
     patches, texts = plt.pie(sizes, colors = colors, startangle = 90)
     plt.legend(patches, label, loc = "best")
     plt.title('How people are reacting on ' + searchTerm + ' by analyzing ' + str(noOfSearchTerms) + ' Tweets.')
-    explode = (0, 0, 0.5)
     plt.axis('equal')
     plt.tight_layout()
     st.pyplot()
